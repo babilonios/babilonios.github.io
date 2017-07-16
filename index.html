@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Cafetería Oliva</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Fresca|Indie+Flower" rel="stylesheet"> 
+</head>
+<body>
+
+  <div class="parallax-container">
+    <div class="parallax-layer sky layer-0" data-parallax-speed="0.12" data-max-scroll="4000"></div>
+    <div class="parallax-layer veleta layer-1" data-parallax-speed="0.2" data-max-scroll="4000"></div>
+    <div class="parallax-layer alhambra layer-2" data-parallax-speed="0.4" data-max-scroll="3000"></div>
+    <div class="parallax-layer casas layer-3" data-parallax-speed="0.6" data-max-scroll="3000"></div>
+    <div class="parallax-layer bloques layer-4" data-parallax-speed="3" data-max-scroll="4000"></div>
+    <div class="parallax-layer logo layer-5" data-parallax-speed="0.2" data-max-scroll="3000"></div>
+    <div class="parallax-layer arbol layer-6" data-parallax-speed="1" data-max-scroll="5050">
+        <h1 class="bienvenida">Bienvenidos</h1>
+        <p>
+            Esta es la web de la cafetería Oliva. Donde vas e encontrar los mejores desayunos de Granada y te vas
+            a poder tomar un café casi perfecto. Bienvenido.
+        </p>
+        
+    </div>
+  </div>
+
+    <div class="content">
+        <div class="texto1"><p>Tomar un <span class="necesidad">buen</span> desayuno</p><p> es una <span class="necesidad">necesidad</span></p></div>
+        <div class="texto2"><p>Disfrutar de un <span class="placer">buen</span> desayuno</p><p> es un <span class="placer">placer</span></p></div>
+        
+        
+        
+        
+        <img src="images/pola-aceite.jpg" alt="Aceite de Oliva" class="polaroid pola-impar" id="aceite">
+        <img src="images/pola-pan.jpg" alt="Pan Casero" class="polaroid pola-par" id="pan">
+        <img src="images/pola-tomate.jpg" alt="Tomates Frescos" class="polaroid pola-impar" id="tomates">
+        <img src="images/pola-cafe.jpg" alt="El mejor café" class="polaroid pola-par" id="cafe">
+        
+    </div>
+    <div class="map-content">
+        <h1 class="donde">
+        Dónde encontrarnos
+        </h1>
+        <div id="map">
+        <script>
+            function initMap() {
+                var oliva = {lat: 37.196, lng:  -3.609256};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 18,
+                center: oliva
+                });
+                var marker = new google.maps.Marker({
+                    position: oliva,
+                    map: map
+                });
+            }
+        </script>
+      
+            
+    </div>
+      
+    </div>
+  
+    <script src="js/parallax.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key= AIzaSyC41t47kllYOYaNsDR6FoJk8-l2w3SRZJY &callback=initMap">
+    </script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+body {
+  height: 4500px;
+  background: #bababa;
+  margin: 0;
+  font-family: 'Fresca', sans-serif;
+}
+.parallax-container {
+  position: fixed;
+  top: -200px;
+  overflow: visible;
+  width: 100%;
+  height:100%;
+  background-image: url(../images/glass3.jpg);
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+  background-position: center;
+  background-size: 1920px 1000px;
+  
+}
+.parallax-layer {
+  width: 100%;
+  height: 600px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-position: bottom center;
+  background-size: 1920px auto;
+}
+  .layer-0 {
+    height: 405px;
+    width: 1920px;
+    top: 0px;
+    z-index: 5;
+    background-image: url(../images/bgend.jpg);
+    background-repeat:  no-repeat;
+  }
+
+  .layer-1 {
+    top: 60px;
+    z-index: 5;
+    background-image: url(../images/veleta_panoramica.png);
+    background-repeat:no-repeat;
+  }
+  .layer-2 {
+    top: 280px;
+    z-index: 10;
+    background-image: url(../images/alhambra-layer2.png);
+    background-repeat:no-repeat;
+
+  }
+  .layer-3 {
+    top: 600px;
+    
+    z-index: 15;
+    background-image: url(../images/casas-layer.png);
+    background-size:auto;
+    background-repeat:no-repeat;
+
+  }
+  .layer-4 {
+    height: 5000px;
+    top: -550px;
+    z-index: 20;
+    background-image: url(../images/bloques-laterales.png);
+    background-size: auto 5000px;
+    background-repeat:no-repeat;
+  }
+
+
+  .layer-5 {
+    height:980px;
+    top: -450px;
+    z-index: 12;
+    background-image: url(../images/Olivalogo2.png);
+    background-repeat:no-repeat;
+    background-size:30%;
+
+  }
+
+  .layer-6 {
+    height: 2000px;
+    width: 1920px;
+    top: 900px;
+    z-index: 30;
+    background-image: url(../images/arboles.png);
+    background-size: 1920px 2000px;
+    background-repeat: no-repeat;
+    left: 50%;
+    margin-left: -960px;
+
+  }
+
+.bienvenida {
+    margin-top: 500px;
+    color: #fff;
+    font-size: 4em;
+    /* text-transform: uppercase; */
+    text-align: center;
+}
+
+/* .glass {
+    height: 1080px;
+    width: 1920px;
+    position: absolute;
+    top: 3000px;
+    background-image:url(../images/glass.jpg);
+} */
+  
+.content {
+  height: 2000px;
+  width: 1910px;
+  position: relative;
+  left: 50%;
+  margin-left: -960px;
+  top: 1900px;
+  background: rgba(0,0,0,0);
+  min-height: 1500px;
+  background-image:url(../images/arbolesabajo.png);
+
+}
+
+p {
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 2em;
+    text-align: center;
+    margin: 0 15%;
+}
+
+.content p {
+    text-align:center;
+    color: #ccc;
+}
+
+.texto1 {
+    position: absolute;
+    top: 0px;
+    left: 35%;
+}
+
+.texto2 {
+    position: absolute;
+    top: 460px;
+    left: 32%;
+}
+
+.necesidad {
+    color:white;
+}
+
+.placer {
+    color:aquamarine;
+}
+
+.content img {
+    height: 25%;
+    width: auto;
+}
+
+.pola-impar {
+    transform: rotate(14deg);
+}
+
+.pola-par {
+    transform: rotate(-14deg);
+}
+
+#aceite {
+    position:absolute;
+    top: 50px;
+    left: 15%;
+}
+
+#pan {
+    position:absolute;
+    top: 70px;
+    right: 14%;
+}
+#tomates {
+    position:absolute;
+    top: 560px;
+    right: 16%;
+}
+#cafe {
+    position:absolute;
+    top: 560px;
+    left: 18%;
+}
+
+
+
+
+
+.map-content {
+    
+    width: 100%;
+    position: absolute;
+    top: 4200px;
+
+    z-index= 0;
+}
+
+.donde {
+    color: white;
+    text-align: left;
+    margin-left: 12%;
+}
+
+
+.content h1 {
+    color: #fff;
+    font-size: 4em;
+    /* text-transform: uppercase; */
+    text-align: center;
+}
+
+
+#map {
+    margin: 0 10%;
+    width: 80%;
+    height: 400px;
+    background-color: #faa
+}
+
+@media only screen and (max-width: 1280px) {
+    p {
+        font-size: 1.4em;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .content p {
+        margin-left: 25%;
+    }
+    #aceite {
+        left: 18%;
+    }
+    #pan {
+    right: 17%;
+    }
+    #tomates {
+    right: 19%;
+    }
+    #cafe {
+        left: 21%;
+    }
+    .layer-5 {
+        background-size: 50%;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    
+    h1 {
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 1.1em;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+    
+    .content p {
+        margin-left: 28%;
+    }
+    
+    #aceite {
+        left: 20%;
+    }
+
+    #pan {
+        right: 18%;
+    }
+    #tomates {
+        right: 21%;
+    }
+    #cafe {
+        left: 23%;
+    }
+    .layer-5 {
+        background-size: 50%;
+    }
+}
+    
+    
+    
+    
+}
